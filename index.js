@@ -5,7 +5,7 @@ import routerProducts from './src/routers/products';
 import routerOrder from './src/routers/order';
 
 const app = express();
-const PORT = 5000;
+const PORT = 80;
 const db = new Nedb();
 
 app.use(BodyParser.json());
