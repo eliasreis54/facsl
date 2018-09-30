@@ -1,9 +1,11 @@
 import { Router } from 'express';
+import Controller from '../controllers/products_controller';
 
 const router = Router();
 
 router.get('/products', (req, res) => {
-  res.send('oi');
+  const controller = new Controller(req, res);
+  return controller.retunrProducts();
 });
 
 export default router;
